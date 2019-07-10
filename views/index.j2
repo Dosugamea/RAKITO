@@ -1,0 +1,33 @@
+{% extends "base/base.j2" %}
+{% block content %}
+<div class="row d-flex align-items-center mt-2" id="top_design">
+    <div class="col">
+        <div class="d-none d-lg-block">
+            <div class="center-image rounded text-light bg-dark">
+                <h1 class="text-center">RAKITO</h1>
+                <h3 class="text-center" glot-model="catch-phrase">新たなるおいしいをあなたに</h3>
+            </div>
+        </div>
+        <div class="d-block d-lg-none">
+            <div class="center-image rounded text-light bg-dark mt-1">
+                <h1 class="text-center">RAKITO</h1>
+                <h3 class="text-center" glot-model="catch-phrase">新たなるおいしいをあなたに</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg">
+        <div class="card mt-2">
+            <h5 class="card-header" glot-model="what-rakito">RAKITOとは?</h5>
+            <div class="card-body" glot-model="what-rakito-s">
+            (Javascriptを有効にしてください)
+            </div>
+        </div>
+        <div class="card mt-3">
+            <h5 class="card-header" glot-model="changelog">更新履歴</h5>
+            <div class="card-body" glot-model="changelog-s">
+            (Javascriptを有効にしてください)
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>shopform_test</title>
+  </head>
+  <body>
+    <center>
+    <div class="add_shop" style="border: 2px solid #000000; margin: 10px 25%;">
+		<form action="/api/admin/shop_add" method="post" name="Regist">
+			<h2 class="section-title">店新規登録</h2>
+			<p>お店の名前</p>
+			<input type="text" name="name">
+			
+			<p>お店の詳細、説明</p>
+			<textarea name="dtil" rows="4" cols="40">
+			</textarea>
+			
+			<p>緯度(小数)</p>
+			<input type="text" name="loc1">
+			
+			<p>経度(小数)</p>
+			<input type="text" name="loc2">
+			
+			<p>住所(文字列)</p>
+			<input type="text" name="addr">
+			
+			<p>工大からの距離(km)</p>
+			<input type="text" name="km">
+			
+			<p>営業時間の入力(0:00~0:00 文字列)</p>
+			<input type="text" name="time">
+			
+			<p>特殊な営業時間(文字列で適当に)</p>
+			<textarea name="tdtl" rows="4" cols="40"></textarea>
+			
+			<p>営業曜日</p>
+			<table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
+				<tr>
+					<th>月</th>
+					<th><input type="checkbox" name="b_mon"></th>
+					
+					<th>火</th>
+					<th><input type="checkbox" name="b_tue"></th>
+				
+					<th>水</th>
+					<th><input type="checkbox" name="b_wed"></th>
+				
+					<th>木</th>
+					<th><input type="checkbox" name="b_thu"></th>
+				
+					<th>金</th>
+					<th><input type="checkbox" name="b_fri"></th>
+				
+					<th>土</th>
+					<th><input type="checkbox" name="b_sat"></th>
+				
+					<th>日</th>
+					<th><input type="checkbox" name="b_sun"></th>
+				</tr>
+			</table>
+			<input class="contact-submit" type="submit" value="登録">
+            <br>
+            <br>
+		</form>	
+        
+      
+	</div>
+    <br>
+	<!--タグの追加フォーム-->
+	<div class="add-tag" style="border: 2px solid #000000; margin: 10px 25%;">
+		<form action="/api/admin/tag_add" method="post" name="Add">
+            <h2 class="section-title">店のタグ追加</h2>
+			<p>ショップID</p>
+			<input type="number" name="shop_id">
+			
+			<p>検索用キーワード</p>
+			<input type="text" name="tag_id">
+			<br>
+			<input class="contact-submit" type="submit" value="追加">
+		</form>
+        <br>
+	</div>
+	<br>
+	<!--タグの削除フォーム-->
+	<div class="delete-tag" style="border: 2px solid #000000; margin: 10px 25%;">
+		<form action="/api/admin/tag_remove" method="post" name="Delete">
+            <h2 class="section-title">店のタグ削除</h2>
+			<p>ショップID</p>
+			<input type="number" name="shop_id">	
+			<p>検索用キーワード</p>
+			<input type="text" name="tag_id">
+			<br>
+			<input class="contact-submit" type="submit" value="削除">
+		</form>
+        <br>
+	</div>
+    <center>
+  </body>
+</html>

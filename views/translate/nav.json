@@ -1,0 +1,46 @@
+﻿{
+    "lang":{
+      "ja":"Language",
+      "en":"Language"
+    },
+    "search-1":{
+      "ja":"キーワード",
+      "en":"Keyword"
+    },
+    "search-2":{
+      "ja":"検索",
+      "en":"Search"
+    },
+    "cate-0":{
+      "ja":"カテゴリ",
+      "en":"Category"
+    },
+    "cate-1":{
+      "ja": "価格から探す",
+      "en": "Search by price"
+    },
+    "cate-2": {
+      "ja": "メニューから探す",
+      "en": "Search by menu"
+    },
+    "nav-1": {
+      "ja": "ヘルプ",
+      "en": "Help"
+    },
+    "nav-2": {
+      "ja": "プライバシーポリシー",
+      "en": "Privacy Policy"
+    },
+    "nav-3": {
+      "ja": "利用規約",
+      "en": "Terms of uses"
+    },
+    "nav-4": {
+      "ja": "お問い合わせ",
+      "en": "Contact us"
+    },
+    "nav-5": {
+      "ja": "<b>このサイトへ寄付</b>",
+      "en": "<b>Donate to this site</b>"
+    }
+}

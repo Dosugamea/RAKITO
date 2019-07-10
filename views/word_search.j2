@@ -1,0 +1,50 @@
+﻿{% extends "base/base.j2" %}
+{% block content %}
+<!-- 空白ないときもい！ -->
+<div class="mt-3"></div>
+<!-- 何の検索結果なのかを書こう -->
+<div class="alert alert-primary" role="alert">
+[[results.query]]<a glot-model="no-kensaku">の検索結果: </a>[[results.cnt]]<a glot-model="ken"> 件</a>
+</div>
+<!-- 店情報 配置エリア -->
+<div class="row">
+    <!-- 店情報カード -->
+    <div class="col-md-6" v-for="result in results.datas">
+        <div class="card my-1">
+            <div class="card-body">
+                <h3 class="card-title">[[result.name]] <b class="text-warning">★★★★★</b></h3>
+                <hr>
+                <p class="card-text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" style="max-height:20vh" v-bind:src="'api/img?id='+result.id+'&num=0'" >
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div v-for="tag in result.tags">
+                                        <a v-bind:href="'tag_search.html?id='+tag.id"><span class="badge badge-primary ml-1 my-1" v-bind:glot-model="'tag_'+tag.id">[[tag.name]]</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    [[result.detail]]
+                </p>
+                <a class="btn btn-outline-primary"v-bind:href="'shop.html?id='+result.id" glot-model="syousai">詳細情報</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<ul class="pagination pagination-md justify-content-center">
+   <li class="page-item disabled"><a class="page-link" href="?p=2">Previous</a></li>
+   <li class="page-item disabled"><a class="page-link" href="?p=1">1</a></li>
+   <li class="page-item disabled"><a class="page-link" href="?p=2">2</a></li>
+   <li class="page-item disabled"><a class="page-link" href="?p=3">3</a></li>
+   <li class="page-item disabled"><a class="page-link" href="?p=4">4</a></li>
+   <li class="page-item disabled"><a class="page-link" href="?p=5">5</a></li>
+   <li class="page-item disabled"><a class="page-link" href="?p=4">Next</a></li>
+</ul>
+-->
+{% endblock %}

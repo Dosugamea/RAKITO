@@ -1,0 +1,14 @@
+﻿{
+    "syousai": {
+      "ja": "詳細情報",
+      "en": "Detail"
+    },
+    "no-kensaku":{
+      "ja": "の検索結果: ",
+      "en": "'s search result: "
+    },
+    "ken":{
+      "ja": " 件",
+      "en": " results"
+    }
+}

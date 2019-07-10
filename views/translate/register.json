@@ -1,0 +1,14 @@
+﻿{
+    "register-title":{
+      "ja": "新規会員登録",
+      "en": "Register"
+    },
+    "failed": {
+      "ja": "登録できませんでした、お手数ですが再度お試しください。",
+      "en": "Sorry, we couldn't register your account.<br>Please retry later."
+    },
+    "go_login": {
+      "ja": "ログインする場合",
+      "en": "Login?"
+    }
+}

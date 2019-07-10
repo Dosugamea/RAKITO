@@ -1,0 +1,38 @@
+{% extends "base/base.j2" %}
+{% block content %}
+<div class="col-md-6 mx-auto my-auto">
+    <div glot-model="failed" style="display:none;" class="mt-2 alert alert-danger" id="err_log" role="alert">
+        登録できませんでした、お手数ですが再度お試しください。
+    </div>
+    <div class="card mt-3">
+        <form action="/api/register" method="post">
+        <div class="card-body container">
+            <h5 class="card-title" glot-model="register-title">新規登録</h5>
+            <hr>
+            <input type="text" name="name" class="form-control my-2" Placeholder="Name">
+            <input type="text" name="phone" class="form-control my-2" Placeholder="Phone">
+            <input type="text" name="email" class="form-control my-2" Placeholder="Email">
+            <input type="password" name="password" class="form-control my-2" Placeholder="Password">
+            <input type="password" name="password_re" class="form-control my-2" Placeholder="Password (Re)">
+            <!-- Loginボタン -->
+            <div class="row">
+                <div class="mx-auto">
+                   <input class="btn btn-primary" type="submit" value="Register">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="mx-auto">
+                   <a href="login.html" glot-model="go_login">ログインする場合</a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<script>
+if(location.search=="?stat=2"){
+    $('#err_log').show();
+}
+</script>
+{% endblock %}

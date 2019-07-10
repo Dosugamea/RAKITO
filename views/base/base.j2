@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<script src="https://unpkg.com/glottologist"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://unpkg.com/vue-cookies@1.5.7/vue-cookies.js"></script>
+<link rel="stylesheet" href="css/top_style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+<title>RAKITO</title>
+</head>
+<div id="app">
+<body>
+<!-- 上部メニュー -->
+{% include "base/upper_menu.j2" %}
+<!-- ページ本体 -->
+<div id="main_area" class="container">
+{% block content %} {% endblock %}
+</div>
+<!-- 下部メニュー -->
+{% include "base/lower_menu.j2" %}
+<script src="js/vue_reader.js"></script>
+</body>
+</div>
+<script src="js/init.js"></script>
+</html>

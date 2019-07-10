@@ -1,0 +1,42 @@
+﻿{
+    "save-page-pdf": {
+      "ja": "ページPDFを保存",
+      "en": "Save PagePDF"
+    },
+    "save-menu-pdf": {
+      "ja": "メニューPDFを保存",
+      "en": "Save MenuPDF"
+    },
+    "sun":{
+      "ja":"日",
+      "en":"Sun"
+    },
+    "mon":{
+      "ja":"月",
+      "en":"Mon"
+    },
+    "tue":{
+      "ja":"火",
+      "en":"Tue"
+    },
+    "wed":{
+      "ja":"水",
+      "en":"Wed"
+    },
+    "thu":{
+      "ja":"木",
+      "en":"Thu"
+    },
+    "fri":{
+      "ja":"金",
+      "en":"Fri"
+    },
+    "sat":{
+      "ja":"土",
+      "en":"Sat"
+    },
+    "close":{
+      "ja":"閉じる",
+      "en":"Close"
+    }
+}

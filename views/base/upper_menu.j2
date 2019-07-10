@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm py-1" id="menu_area">
+    <!-- タイトル -->
+    <a class="navbar-brand" href="index.html"><img src="img/logo_t.png" alt="RAKITO Logo"></a>
+    <!-- スマホ対応 -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- メニューアイテムリスト-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- 左寄せ -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item my-auto mr-3">
+              <div class="input-group">
+                <input type="text" onkeypress="input_search(event.keyCode);"　class="form-control" id="search_form" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <a class="btn btn-primary" href="#" id="w_search"><i class="fas fa-search"></i> <span glot-model="search-2">検索</span></a>
+                </div>
+              </div>
+            </li>
+            <!-- カテゴリ選択 -->
+            <li class="nav-item text-center dropdown">
+                <a class="btn btn-primary dropdown-toggle" href="#" id="dropdown_key" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" glot-model="cate-0">カテゴリ</i></a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item dropdown-submenu">
+                        <a href="#" data-toggle="dropdown" glot-model="cate-1" class="dropdown-toggle">値段から検索</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="tag_search.html?id=3">~1000</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu">
+                        <a href="#" data-toggle="dropdown" glot-model="cate-2" class="dropdown-toggle">メニューから検索</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="tag_search.html?id=1">カレー</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="tag_search.html?id=7">ラーメン</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="tag_search.html?id=11">お弁当</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="tag_search.html?id=2">ヘルシー</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 右寄せ -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item text-center" v-show="noLogin">
+                <a class="nav-link" href="login.html" class="btn text-center"><i class="fas fa-sign-in-alt"></i> [[name]]</a>
+            </li>
+            <li class="nav-item text-center" v-show="yesLogin">
+                <a class="nav-link" href="user.html" class="btn text-center"><i class="fas fa-user"></i> [[name]]</a>
+            </li>
+            <li class="nav-item mx-2 text-center dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown_key2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" glot-model="lang">Language</i></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-item">
+                        <a v-bind:href="location.pathname+'?lang=ja'">日本語</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a v-bind:href="location.pathname+'?lang=en'">English</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

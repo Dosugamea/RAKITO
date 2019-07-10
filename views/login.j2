@@ -1,0 +1,52 @@
+{% extends "base/base.j2" %}
+{% block content %}
+<div class="col-md-6 mx-auto my-auto">
+    <div style="display:none;" class="mt-2 alert alert-info" id="suc_log" glot-model="suc_log" role="alert">
+        登録に成功しました。ログインをお願いします。
+    </div>
+    <div style="display:none;" class="mt-2 alert alert-danger" id="err_log" glot-model="err_log" role="alert">
+        ログインできませんでした、お手数ですが再度お試しください。
+    </div>
+    <div class="card mt-3">
+        <form action="/api/login" method="post">
+        <div class="card-body container">
+            <h5 class="card-title" glot-model="login-title">ログイン</h5>
+            <hr>
+            <input type="text" name="mail" class="form-control my-2" Placeholder="Email">
+            <input type="password" name="passw" class="form-control my-2" Placeholder="Password">
+            <div class="row">
+                <div class="mx-auto">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="keepLogin"><label class="form-check-label" for="keepLogin" glot-model="keep-login">ログインを記憶する</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Loginボタン -->
+            <div class="row">
+                <div class="mx-auto">
+                   <input class="btn btn-primary" type="submit" value="Login">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="mx-auto">
+                   <a href="about.html"　glot-model="go_forgot">パスワードを忘れた場合</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mx-auto">
+                   <a href="register.html"　glot-model="go_register">新規登録する場合</a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<script>
+if(location.search=="?stat=1"){
+    $('#suc_log').show();
+}else if(location.search=="?stat=2"){
+    $('#err_log').show();
+}
+</script>
+{% endblock %}

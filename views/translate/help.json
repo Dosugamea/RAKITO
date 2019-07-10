@@ -1,0 +1,90 @@
+﻿{
+    "catch-phrase": {
+      "ja": "新たなるおいしいをあなたに",
+      "en": "Provide new delicious to you"
+    },
+    "lang":{
+      "ja":"Language",
+      "en":"Language"
+    },
+    "search-1":{
+      "ja":"キーワード",
+      "en":"Keyword"
+    },
+    "search-2":{
+      "ja":"検索",
+      "en":"Search"
+    },
+    "cate-0":{
+      "ja":"カテゴリ",
+      "en":"Category"
+    },
+    "cate-1":{
+      "ja": "価格から探す",
+      "en": "Search by price"
+    },
+    "cate-2": {
+      "ja": "メニューから探す",
+      "en": "Search by menu"
+    },
+    "nav-1": {
+      "ja": "ヘルプ",
+      "en": "Help"
+    },
+    "nav-2": {
+      "ja": "プライバシーポリシー",
+      "en": "Privacy Policy"
+    },
+    "nav-3": {
+      "ja": "利用規約",
+      "en": "Terms of uses"
+    },
+    "nav-4": {
+      "ja": "お問い合わせ",
+      "en": "Contact Us"
+    },
+    "nav-5": {
+      "ja": "<b>このサイトへ寄付</b>",
+      "en": "<b>Donate to this site</b>"
+    },
+    "help-header": {
+      "ja": "ヘルプページ",
+      "en": "Help page"
+    },
+    "what-site": {
+      "ja": "何のサイト？",
+      "en": "What site is this?"
+    },
+    "what-site-s": {
+      "ja": "　あなたが知りたい金沢工業大学周辺の飲食店情報を閲覧することができるサイトです",
+      "en": " This is website for find restaurants that near the Kanazawa Institute of Technology."
+    },
+    "how-use": {
+      "ja": "使用方法は？",
+      "en": "How to use?"
+    },
+    "how-use-s": {
+      "ja": "　1．検索キーワード欄にキーワードを入力し、検索する。<br>　2．キーワードによって出てきた飲食店押すとその飲食店の情報を見る。<br>　3.更に関連する店情報を探す",
+      "en": " 1.Input keyword on keyword input <br> 2. Find restaurants on result page.<br> 3.You can find more restaurants related it."
+    },
+    "what-register": {
+      "ja": "会員登録とは？",
+      "en": "What can I do with register?"
+    },
+    "what-register-s": {
+      "ja": "　このサイトは会員登録せずに利用することもできますが、会員登録をすることで閲覧履歴の保存やレビューの投稿などの追加機能を利用できるようになります。会員登録は無料です、ぜひご利用ください。",
+      "en": " You can save the history and make a review with the account. Registering is free."
+    },
+    "what-donate": {
+      "ja": "寄付とは?",
+      "en": "Why donate?"
+    },
+    "what-donate-s": {
+      "ja": "　当サイトは全サービスを無料で提供していますが、サイトを運営するためには資金が必要です。もしこのサイトの内容に満足頂けたら、<a href='#'>こちら</a>より寄付をお願いします。",
+      "en": " This site provide all services for free. But we need money for keep this website. If you got happy, please donate us from <a href='#'>here</a>."
+    },
+    "if-problem": {
+      "ja": "不具合や質問などのお問い合わせは<a href='#'>こちら</a>からご連絡ください。",
+      "en": "If you have a problem or question, please tell us from <br><a href='#'>here</a>"
+    }
+}

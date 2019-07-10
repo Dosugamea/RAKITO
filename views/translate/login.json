@@ -1,0 +1,26 @@
+﻿{
+    "login-title":{
+      "ja": "ログイン",
+      "en": "Login"
+    },
+    "keep-login":{
+      "ja":"ログインを記憶する",
+      "en":"Keep my login"
+    },
+    "suc_log":{
+       "ja": "登録に成功しました。ログインをお願いします。",
+       "en": "Register succeed. Please login from here."
+    },
+    "err_log":{
+       "ja": "ログインできませんでした、お手数ですが再度お試しください。",
+       "en": "Sorry, we couldn't verify your account.<br>Please retry later."
+    },
+    "go_forgot": {
+      "ja": "パスワードを忘れた場合",
+      "en": "Forgot password?"
+    },
+    "go_register": {
+      "ja": "新規登録する場合",
+      "en": "Sign up?"
+    }
+}

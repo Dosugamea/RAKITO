@@ -1,0 +1,36 @@
+{% extends "base/base.j2" %}
+{% block content %}
+<div class="d-flex w-100"><div class="card bg-light mx-auto mt-3 w-100">
+<h2 class="card-header" glot-model="help-header">ヘルプページ</h2>
+<blockquote class="blockquote mb-0"><p>
+
+<div class="mx-4">
+<h3 class="mt-4" glot-model="what-site">何のサイト？</h3>
+<p glot-model="what-site-s">　あなたが知りたい金沢工業大学周辺の飲食店情報を閲覧することができるサイトです</p>
+</div>
+
+<div class="mx-4">
+<h3 class="mt-4" glot-model="how-use">使用方法は？</h3>
+<p glot-model="how-use-s">　1．検索キーワード欄にキーワードを入力し、検索する。<br>
+　2．キーワードによって出てきた飲食店押すとその飲食店の情報を見る。<br>
+　3.更に関連する店情報を探す</p>
+</div>
+
+<div class="mx-4">
+<h3 class="mt-4" glot-model="what-register">会員登録とは？</h3>
+<p glot-model="what-register-s">　このサイトは会員登録不要で利用することもできますが、会員登録をすることで閲覧履歴の保存やレビューの投稿などの追加機能を利用できるようになります。会員登録は無料です、ぜひご利用ください。</p>
+</div>
+
+<div class="mx-4">
+<h3 class="mt-4" glot-model="what-donate">寄付とは?</h3>
+<p glot-model="what-donate-s">　当サイトは全サービスを無料で提供していますが、サイトを運営するためには資金が必要です。もしこのサイトの内容に満足頂けたら、<a href="#">こちら</a>より寄付をお願いします。</p>
+<center><p class="mt-5" glot-model="if-problem">不具合や質問などのお問い合わせは<a href="#">こちら</a>からご連絡ください。</p>
+</center>
+</div></blockquote></div></div></div>
+<script>
+const glot2 = new Glottologist();
+glot2.import("/translate.json").then(() => {
+    glot2.render($cookies.get('lang'));
+})
+</script>
+{% endblock %}

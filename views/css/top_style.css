@@ -1,0 +1,55 @@
+/*
+　店情報ページ用
+*/
+.carousel-item:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,0.1);
+}
+
+
+/*
+　店情報一覧ページ用
+*/
+#main_area{
+    min-height: 482px;
+}
+
+/*
+　トップページ用
+*/
+#top_design{
+    background-image:url("../img/bg.jpg");
+    background-size: cover;
+    height:78.4%;
+}
+.center-image{
+    position: absolute;
+    left: 4;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-wrap:normal;
+    width: max-content;
+    height: max-content;
+}
+
+
+/*
+　共通メニュー用
+*/
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}

@@ -1,0 +1,22 @@
+﻿{
+    "catch-phrase": {
+      "ja": "新たなるおいしいをあなたに",
+      "en": "Provide new delicious to you"
+    },
+    "what-rakito":{
+      "ja": "RAKITOとは?",
+      "en": "What is RAKITO?"
+    },
+    "what-rakito-s":{
+      "ja": "このサイトは金沢工業大学周辺の店情報をお届けする、飲食店情報サイトです",
+      "en": "This is the site that shows shop informatinon around Kanazawa institute of technology."
+    },
+    "changelog":{
+      "ja": "更新履歴",
+      "en": "Changelog"
+    },
+    "changelog-s":{
+      "ja": "19/06/05 ページレイアウトを変更しました",
+      "en": "19/06/05 Updated page layout"
+    }
+}
