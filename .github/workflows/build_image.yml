@@ -11,6 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: rakito
     steps:
       - name: Checkout
         uses: actions/checkout@v2
